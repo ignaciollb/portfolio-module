@@ -1,4 +1,4 @@
-import { Stock } from "../models/stock";
+import { Stock } from "../entities/stock";
 
 export type Holding = {
   stock: Stock;

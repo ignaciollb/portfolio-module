@@ -88,6 +88,21 @@ export class Portfolio {
         }
       }
     }
+
+    // Process holdings that are not in allocations (should be sold)
+    for (const symbol in this.holdings) {
+      if (!this.allocations[symbol]) {
+        const holding = this.holdings[symbol];
+        if (holding.shares > 0) {
+          movements.push({
+            symbol,
+            shares: holding.shares,
+            type: "sell",
+          });
+        }
+      }
+    }
+
     return movements;
   }
 }
