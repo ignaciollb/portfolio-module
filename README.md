@@ -33,7 +33,7 @@ Once the first iteration was done i used antigravity which is an agentic ai tool
 
 Main concern during the development was how to manage the stock price, i focused on following the instructions, but if i had to do a second iteration of this i would decouple that from the stock and i would'nt need to have the stock in the allocation and holding objects.
 
-The idea of my implementation was to follow this instruction "You’re building a portfolio management module, part of a personal investments and trading app" and create a module that could be used in a bigger system.
+The idea of my implementation was to follow this instruction "You’re building a portfolio management module, part of a personal investments and trading app" and create a module that could be used in a bigger system. That's why i use tests to validate the logic and edge cases.
 
 For time constraints i decided to simplify:
 
